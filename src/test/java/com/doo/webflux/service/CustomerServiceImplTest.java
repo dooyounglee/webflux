@@ -18,13 +18,13 @@ import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 
 @ExtendWith(MockitoExtension.class)
-public class CustomerServiceTest {
+public class CustomerServiceImplTest {
 
 	@Mock
 	private CustomerRepository customerRepository;
 	
 	@InjectMocks
-	private CustomerService customerService;
+	private CustomerServiceImpl customerService;
 	
 	@Test
 	void createCustomerTest() {
